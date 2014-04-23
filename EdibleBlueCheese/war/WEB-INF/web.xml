@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>EdibleBlueCheese</servlet-name>
+		<servlet-class>com.bluecheese.server.servlets.EdibleBlueCheeseServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EdibleBlueCheese</servlet-name>
+		<url-pattern>/ediblebluecheese</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.bluecheese.server.servlets.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Registration</servlet-name>
+		<servlet-class>com.bluecheese.server.servlets.RegistrationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Registration</servlet-name>
+		<url-pattern>/registration</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ChangeSelfie</servlet-name>
+		<servlet-class>com.bluecheese.server.servlets.ChangeSelfieServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangeSelfie</servlet-name>
+		<url-pattern>/changeselfie</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UpdateProfile</servlet-name>
+		<servlet-class>com.bluecheese.server.servlets.UpdateProfileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateProfile</servlet-name>
+		<url-pattern>/updateprofile</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ChangePassWord</servlet-name>
+		<servlet-class>com.bluecheese.server.servlets.ChangePwdServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangePassWord</servlet-name>
+		<url-pattern>/changepassword</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SearchUser</servlet-name>
+		<servlet-class>com.bluecheese.server.servlets.SearchUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchUser</servlet-name>
+		<url-pattern>/searchuser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetUserInfo</servlet-name>
+		<servlet-class>com.bluecheese.server.servlets.GetUserInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetUserInfo</servlet-name>
+		<url-pattern>/getuserinfo</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
